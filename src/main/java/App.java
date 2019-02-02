@@ -19,20 +19,22 @@ public class App {
 		  return new ModelAndView(model, layout);
 		}, new VelocityTemplateEngine());
 
-		get ("/hero", (request, response) -> {
+		post ("/hero", (request, response) -> {
 		  Map<String, Object> model = new HashMap<String, Object>();
 		  String name = request.queryParams("name");
 		  String age = request.queryParams("age");
 		  String power = request.queryParams("power");
 		  String weakness = request.queryParams("weakness");
-
 		  Hero myHero = new Hero(name,age,power,weakness);
-		  model.put("myHero", myHero);
-
       	  model.put("template", "templates/success_hero.vtl");
 		  return new ModelAndView(model, layout);
 		}, new VelocityTemplateEngine());
 
-		
+        get("/hero", (request, response) -> {
+          Map<String, Object> model = new HashMap<String, Object>();
+          model.put("heroes", Hero.all());
+          model.put("template", "templates/hero.vtl");
+          return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }
