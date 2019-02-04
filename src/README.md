@@ -14,3 +14,11 @@ This project has been written using java programming,spark framework, css and ht
 -----------------------------------------------------------------------------
 
 
+## Behaviour driven Development (BDD)
+|#User inputs   |  #Example outputs |         
+|---------------|-------------------|
+| Add a hero         | A hero is added |
+| Add a squad        | A squad is added  |
+| Asign a hero to a squad       | Hero is displayed in a squad  |
+---------------------------------------------------------------------------------
+
