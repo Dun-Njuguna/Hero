@@ -1,4 +1,42 @@
 body
 {
-	background-color: skyblue;
+/*	background-image: url("./images/spiderman.png");
+	background-color: #FFFAFA;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-size: */
+
+	background: url(./images/spiderman.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.container
+{
+	color: white;
+}
+.well
+{
+	margin: 20px;
+	padding-top: 15px;
+	text-align: center;
+	background-color: #FFFAFA;
+	color: #800000;
+	min-height: 80px;
+}
+.jumbotron
+{
+	margin: 20px;
+/*	background-color: #FFFAFA;*/
+	background-image: url(./images/spiderman.png) ;
+	background-repeat: ;
+
+	min-height: 400px;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.heroLink
+{
+	text-align: center;
 }

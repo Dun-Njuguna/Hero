@@ -1,0 +1,17 @@
+<h1>Add squad</h1>
+<form action='/squad' method="post" >
+  <div class="form-group">
+    <label for="name">Your heroes name</label>
+    <input id="name" name="name" class="form-control" type="text">
+    <input id="heroId" name="heroId" type="hidden" value="$hero.getId()">
+  </div>
+  <div class="form-group">
+    <label for="size">Your heroes age</label>
+    <input id="size" name="size" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="cause">Your heroes power</label>
+    <input id="cause" name="cause" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Create Squad</button>
+</form>

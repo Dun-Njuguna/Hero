@@ -1,8 +1,8 @@
 <h1>All Heroes</h1>
 <ul>
-  #foreach ($hero in $hero)
+  #foreach ($hero in $heroes)
     <li><a href="/hero/$hero.getId()">$hero.getName()</a></li>
   #end
 </ul>
 
-<a href="/add_hero_form">Add New Hero</a>
+<a href="/add_hero_form/new">Add New Hero</a>

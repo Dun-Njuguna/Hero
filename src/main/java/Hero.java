@@ -4,14 +4,14 @@ import java.util.List;
 public class Hero {
 
 	private String mName;
-	private String mAge;
+	private int mAge;
 	private String mSpecialPower;
 	private String mWeakness;
 	private static List<Hero> instances = new ArrayList<Hero>();
   	private int mId;
+  	private List<Squad> mSquad;
 
-
-	public Hero(String name, String age, String power, String weakness)
+	public Hero(String name, int age, String power, String weakness)
 	{
 		mName = name;
 		mAge = age;
@@ -19,6 +19,7 @@ public class Hero {
 		mWeakness = weakness;
 		instances.add(this);
 		mId = instances.size();
+		mSquad = new ArrayList<Squad>();
 	}
 
 	public String getName() 
@@ -26,7 +27,7 @@ public class Hero {
     	return mName;
   	}
 
-	public String getAge() 
+	public int getAge() 
 	{
     	return mAge;
   	}
@@ -54,7 +55,19 @@ public class Hero {
   	}
 
 	public static Hero find(int id) {
-	  return instances.get(id - 1);
+    	try {
+    	  return instances.get(id - 1);
+    	}catch (IndexOutOfBoundsException exception) {
+      	  return null;
+    	}
+	}
+
+	public List<Squad> getSquad() {
+	  return mSquad;
+	}
+
+	public void addSquad(Squad squad) {
+	  mSquad.add(squad);
 	}
 
 }

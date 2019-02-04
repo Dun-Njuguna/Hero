@@ -1,0 +1,12 @@
+<h1>Hero Details</h1>
+#if ($hero)
+  <h1>$hero.getName()</h1>
+  <ul>
+    #foreach($squad in $hero.getSquad())
+     <li>$squad.getName()</li>
+    #end
+  </ul>
+#else
+  <em><p>Oops!</p></em>
+#end
+<a href="/add_squad_form//$hero.getId()/squad/new">Add a new Squad</a>
