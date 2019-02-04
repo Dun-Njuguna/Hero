@@ -1,11 +1,5 @@
 body
 {
-/*	background-image: url("./images/spiderman.png");
-	background-color: #FFFAFA;
-	padding: 20px;
-	background-repeat: no-repeat;
-	background-size: */
-
 	background: url(./images/spiderman.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
