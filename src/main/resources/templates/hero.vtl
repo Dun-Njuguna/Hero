@@ -1,8 +1,17 @@
 <h1>All Heroes</h1>
 <ul>
   #foreach ($hero in $hero)
-    <li><a href="/hero/$hero.getId()">$hero.getName()</a></li>
+    <li>
+    <p>Name: </p><span>$hero.getName()</span>
+    <br>
+    <p>Age: </p><span> $hero.getAge() </span> 
+    <br>
+    <p>Power: </p><span> $hero.getSpecialPower()</span> 
+    <br>
+    <p>weakness: </p><span> $hero.getWeakness()</span> 
+    </li>
   #end
 </ul>
 
 <a href="/add_hero_form">Add New Hero</a>
+<a href="/add_squad_form">Add New Squad</a>

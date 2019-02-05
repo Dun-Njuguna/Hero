@@ -1,8 +1,15 @@
-<h1>All Heroes</h1>
+<h1>Squad</h1>
 <ul>
-  #foreach ($hero in $heroes)
-    <li><a href="/hero/$hero.getId()">$hero.getName()</a></li>
+  #foreach ($squad in $squads)
+    <li>
+    <p>Name: </p><span>$squad.getName()</span>
+    <br>
+    <p>Size: </p><span> $squad.getSize()</span> 
+    <br>
+    <p>Cause: </p><span> $squad.getCause()</span> 
+    </li>
   #end
 </ul>
 
-<a href="/add_hero_form/new">Add New Hero</a>
+<a href="/add_hero_form">Add New Hero</a>
+<a href="/add_squad_form">Add New Squad</a>

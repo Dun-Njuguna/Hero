@@ -40,4 +40,8 @@ public class Squad {
       	  return null;
     	}
 	}
+
+	public static List<Squad> all() {
+		return instances;
+	}
 }
