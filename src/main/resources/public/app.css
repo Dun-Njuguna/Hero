@@ -25,8 +25,10 @@ body
 {
 	margin: 20px;
 /*	background-color: #FFFAFA;*/
-	background-image: url(./images/spiderman.png) ;
-	background-repeat: ;
+	background-image: url(./images/spiderman.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #800000; 
 
 	min-height: 400px;
 	margin-left: 7%;
