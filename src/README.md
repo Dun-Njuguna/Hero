@@ -4,7 +4,7 @@
 ----------------------------------------------------------------------
 
 ## Project Objectives
-The objective of this project is to create an application, that allows the user to create a custom hero and asign a squad.
+The objective of this project is to create an application, that allows the user to create a custom hero and assign a squad.
 
 ----------------------------------------------------------------------
 
