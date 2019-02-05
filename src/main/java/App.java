@@ -43,12 +43,12 @@ public class App {
 		  return new ModelAndView(model, layout);
 		}, new VelocityTemplateEngine());
 
-        // get("/hero", (request, response) -> {
-        //   Map<String, Object> model = new HashMap<String, Object>();
-        //   model.put("hero", Hero.all());
-        //   model.put("template", "templates/hero.vtl");
-        //   return new ModelAndView(model, layout);
-        // }, new VelocityTemplateEngine());
+        get("/hero", (request, response) -> {
+          Map<String, Object> model = new HashMap<String, Object>();
+          model.put("hero", Hero.all());
+          model.put("template", "templates/hero.vtl");
+          return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
 
 		get("/add_squad_form/:id/squad/new", (request, response) -> {
